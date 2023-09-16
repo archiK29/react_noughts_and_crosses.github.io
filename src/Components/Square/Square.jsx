@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "./Square.module.css";
+import s from "./Square.module.css";
 
-const Square = () => {
-  return <div></div>;
+const Square = (props) => {
+  return (
+    <button className={s.square} onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 };
 
 export default Square;
